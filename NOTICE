@@ -1,0 +1,56 @@
+NOTICE
+======
+
+This repository mixes three things with three different origins. Read this before
+reusing anything.
+
+1. converter/convert_flash_next.patch
+-------------------------------------
+A patch against **QEngine**'s `tools/convert_flash_next.py`, a derivative work of
+
+    QEngine — https://github.com/bpx03/QEngine
+    Required Notice: Copyright (c) 2026 Krzysztof Jagus
+    Licensed under the PolyForm Noncommercial License 1.0.0
+    https://polyformproject.org/licenses/noncommercial/1.0.0
+
+That patch — and any work that applies it, and the converter it produces — is
+**noncommercial only**, and the notice above must travel with it. Nothing in this
+repository is a commercial offering.
+
+The same changes are offered upstream as a pull request:
+https://github.com/bpx03/QEngine/pull/23
+
+2. The weights you build with this kit
+--------------------------------------
+The pipeline abliterates and converts **ukisai's** Swift-1.5 fine-tune of
+Qwen3.8-Flash-Next. Checkpoints produced here are derivative works of
+
+    ukisai/Swift-1.5-Qwen3.8-Flash-Next-W4A16-AutoRound
+    licensed under the Qwen Community License 1.0 (see LICENSE-QWEN-COMMUNITY-1.0)
+    and the terms on the model card (the upstream repository is gated)
+
+and of Qwen3.8-Flash-Next itself. Keep the copyright and permission notice with any
+copy or substantial portion. Note the Qwen Community License's condition 2: if you
+run the result as a commercial Model-as-a-Service or AI Work Assistant, you need a
+separate licence from Qwen (internal use is exempt).
+
+**The abliteration removes the refusal direction. See the safety note in README.md.**
+
+3. Our own code
+---------------
+`ablation/`, `scripts/`, `engine/`, and the report under `reports/` are ours, MIT
+licensed (see LICENSE).
+
+Credits
+-------
+- **QEngine** — Krzysztof Jagus (bpx03). The engine this kit targets, and the converter
+  we patched. https://github.com/bpx03/QEngine
+- **Swift-1.5 / Qwen3.8-Flash-Next** — UkisAI, and Intel's AutoRound quantisation that
+  the W4A16 checkpoints are built from.
+- **Qwen3.8-Flash-Next** — Qwen / Alibaba.
+- The abliteration approach follows the published refusal-direction technique; the
+  direction itself is *recovered* by `ablation/direction.py` from a pair of checkpoints
+  and is not redistributed here.
+- The measurement method and benchmarking conventions follow **club-3090**
+  (https://github.com/noonghunna/club-3090); the numbers for this build are in
+  club-3090 discussions #1961 and issue #2000.
