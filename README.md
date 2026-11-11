@@ -1,8 +1,8 @@
-# Swift-1.5 Flash-Next on QEngine — abliteration + conversion kit
+# Swift-1.5 Flash-Next **Uncensored** on QEngine — abliteration + conversion kit
 
 Everything needed to take **`ukisai/Swift-1.5-Qwen3.8-Flash-Next-W4A16-AutoRound`** (a W4A16
-AutoRound export), remove its refusal direction, convert it to the layout **QEngine** loads, and
-serve it on two consumer cards.
+AutoRound export), remove its refusal direction to make it **uncensored**, convert it to the layout
+**QEngine** loads, and serve it on two consumer cards.
 
 This is the pipeline behind the build measured in [club-3090 discussions
 #1961](https://github.com/noonghunna/club-3090/discussions/1961) (quality) and
