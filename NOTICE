@@ -26,7 +26,7 @@ The pipeline abliterates and converts **ukisai's** Swift-1.5 fine-tune of
 Qwen3.8-Flash-Next. Checkpoints produced here are derivative works of
 
     ukisai/Swift-1.5-Qwen3.8-Flash-Next-W4A16-AutoRound
-    licensed under the Qwen Community License 1.0 (see LICENSE-QWEN-COMMUNITY-1.0)
+    licensed under the Qwen Community License 1.0 (see third_party/QWEN-COMMUNITY-LICENSE-1.0.txt)
     and the terms on the model card (the upstream repository is gated)
 
 and of Qwen3.8-Flash-Next itself. Keep the copyright and permission notice with any
