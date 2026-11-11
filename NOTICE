@@ -54,3 +54,9 @@ Credits
 - The measurement method and benchmarking conventions follow **club-3090**
   (https://github.com/noonghunna/club-3090); the numbers for this build are in
   club-3090 discussions #1961 and issue #2000.
+
+4. Which licence covers what, in one line
+-----------------------------------------
+`ablation/`, `scripts/`, `engine/`, `reports/`  ->  MIT (LICENSE)
+`converter/convert_flash_next.patch`             ->  PolyForm Noncommercial 1.0.0 (QEngine, see §1)
+any checkpoint you build                         ->  Qwen Community License 1.0 (see §2)
